@@ -1,8 +1,8 @@
 package com.qa.player.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,9 +15,9 @@ public class PlayerRest {
 	@Autowired
 	private PlayerService service;
 	
-	@PutMapping("${path.setPlaying}")
-	public Boolean setPlaying(@RequestBody String player) {
-		return service.setPlaying(player);
+	@GetMapping("${path.setPlaying}")
+	public Boolean setPlaying(@PathVariable String isPlaying) {
+		return service.setPlaying(isPlaying);
 	}
 
 }
