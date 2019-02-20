@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class PlayerServiceImpl implements PlayerService {
 	
 	public Boolean setPlaying(String isPlaying) {
-		return ("false".equalsIgnoreCase(isPlaying)) ? true : false;
+		return "false".equalsIgnoreCase(isPlaying) ? true : false;
 	} 
 
 }

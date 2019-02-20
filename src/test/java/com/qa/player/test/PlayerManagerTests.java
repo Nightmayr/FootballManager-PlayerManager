@@ -12,22 +12,22 @@ public class PlayerManagerTests {
 	PlayerServiceImpl service = new PlayerServiceImpl();
 	
 	@Test
-	public void TestWhenInputIsFalse() {
+	public void testWhenInputIsFalse() {
 		assertTrue(service.setPlaying("false"));
 	}
 	
 	@Test
-	public void TestWhenInputIsTrue() {
+	public void testWhenInputIsTrue() {
 		assertFalse(service.setPlaying("true"));
 	}
 	
 	@Test
-	public void TestWhenInputIsInvalid() {
+	public void testWhenInputIsInvalid() {
 		assertFalse(service.setPlaying("adfgdfgddjfhkg"));
 	}
 	
 	@Test
-	public void TestWhenInputIsEmpty() {
+	public void testWhenInputIsEmpty() {
 		assertFalse(service.setPlaying(""));
 	}
 
