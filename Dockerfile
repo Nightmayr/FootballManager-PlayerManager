@@ -9,6 +9,6 @@ COPY --from=maven-build /build/target/FootballManager-PlayerManager-0.0.1-SNAPSH
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/FootballManager-PlayerManager-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8081
+EXPOSE 8082
 
 
