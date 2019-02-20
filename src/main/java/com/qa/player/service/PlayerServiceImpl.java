@@ -4,13 +4,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PlayerServiceImpl implements PlayerService {
-
+	
 	public Boolean setPlaying(String isPlaying) {
-		boolean playing;
-		if ("${choice.bool}".equalsIgnoreCase(isPlaying)) {
-			playing = false;
-		} else {
+		boolean playing = false;
+		if ("false".equalsIgnoreCase(isPlaying)) {
 			playing = true;
+		} else {
+			playing = false;
 		} 
 		return playing;
 	} 
