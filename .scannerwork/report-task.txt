@@ -1,0 +1,5 @@
+projectKey=football-manager:player-api
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/football-manager:player-api
+ceTaskId=AWkKV0C3GyZgb9BhHWM0
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWkKV0C3GyZgb9BhHWM0

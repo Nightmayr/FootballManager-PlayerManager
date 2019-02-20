@@ -7,15 +7,17 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 public class PlayerIsPlaying {
-	
+
 	@Id
 	private Long id;
-	
+
 	@JsonProperty("playing")
 	private Boolean isPlaying;
-	
-	public PlayerIsPlaying() {}
-	
+
+	public PlayerIsPlaying() {
+		//Empty constructor
+	}
+
 	public PlayerIsPlaying(Boolean isPlaying) {
 		this.isPlaying = isPlaying;
 	}
