@@ -19,7 +19,7 @@ public class PlayerManagerTests {
 	@Test
 	public void testWhenInputIsTrue() {
 		assertFalse(service.setPlaying("true"));
-	}
+	} 
 	
 	@Test
 	public void testWhenInputIsInvalid() {
