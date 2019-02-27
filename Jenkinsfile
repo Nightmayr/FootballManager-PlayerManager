@@ -2,7 +2,7 @@ node {
 
         withMaven(maven:'maven') {
           stage('Checkout') {
-            git url: 'https://github.com/Nightmayr/FootballManager-PlayerManager.git', branch: 'new-dockerfile'
+            git url: 'https://github.com/Nightmayr/FootballManager-PlayerManager.git', branch: 'development'
         }
  
         stage('Build') {
