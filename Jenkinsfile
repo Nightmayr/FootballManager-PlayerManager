@@ -1,6 +1,10 @@
 node {
-
  
+        stage("Checkout"){
+            checkout scm
+            sh 'git checkout $branch'
+        }
+
         stage('Build') {
             sh 'mvn package -Dmaven.test.skip=true spring-boot:repackage'
         }
